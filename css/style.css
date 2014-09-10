@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: Ostrich;
     src: url('../fonts/ostrich-black.ttf');
@@ -238,7 +237,6 @@ p{
   }
 }
 @media screen and (max-width: 900px){
-
   #about-us .left{
     display: block;
     width: 100%;
