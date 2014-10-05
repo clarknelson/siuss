@@ -46,13 +46,25 @@ $(document).ready(function(){
     }
   });
 
-  var width = $('#about-us .gallery').innerWidth();
-  var height = width*0.65;
-  $('#about-us .gallery').css('height', height);
+  var width1 = $('#about-us .gallery').innerWidth();
+  var height1 = width1*0.65;
+  $('#about-us .gallery').css('height', height1);
+
+  var width2 = $('#hero iframe').innerWidth();
+  var height2 = width2*.567307692;
+  $('#hero iframe').css('height', height2);
 
   $(window).resize(function(){
-    width = $('#about-us .gallery').innerWidth();
-    height = width*0.65;
-    $('#about-us .gallery').css('height', height);
+    width1 = $('#about-us .gallery').innerWidth();
+    height1 = width1*0.65;
+    $('#about-us .gallery').css('height', height1);
+
+    width2 = $('#hero iframe').innerWidth();
+    height2 = width2*.567307692;
+    $('#hero iframe').css('height', height2);
+  });
+
+  $('#hero h1').click(function(){
+    $(this).fadeOut();
   });
 });

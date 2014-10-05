@@ -85,17 +85,18 @@ p{
 
 
 #hero{
-  background: url('../img/intro.jpg');
-  background-size: cover;
-  background-position: center;
+
 }
 #hero h1{
-  text-align: right;
   font-family: Ostrich, Helvetica, sans-serif;
   line-height: 110%;
-  font-size: 101px;
-  margin: 0;
-  padding-top: 330px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  font-size: 39px;
+  margin: 10px 25px;
+  color: #D7EA5D;
   padding-right: 30px;
 }
 
@@ -140,6 +141,9 @@ p{
 }
 #objective .panel p{
   margin-bottom: 30px;
+}
+#objective .panel p:last-of-type{
+  margin-bottom: 0px;
 }
 
 
@@ -275,9 +279,6 @@ p{
 }
 
 @media screen and (max-width: 700px){
-  #hero h1{
-    padding-top: 30px;
-  }
   .left{
     display: block;
     width: 100%;
