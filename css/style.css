@@ -249,6 +249,10 @@ p{
 }
 #contact .logos{
   clear: both;
+  text-align: center;
+}
+#contact .logos img{
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 700px){
