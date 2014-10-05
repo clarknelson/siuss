@@ -189,6 +189,18 @@ p{
 #about-us .gallery img:nth-child(3){
   left: 200%;
 }
+#about-us .gallery img:nth-child(4){
+  left: 300%;
+}
+#about-us .gallery img:nth-child(5){
+  left: 400%;
+}
+#about-us .gallery img:nth-child(6){
+  left: 500%;
+}
+#about-us .gallery img:nth-child(7){
+  left: 600%;
+}
 
 
 #faces{
