@@ -151,10 +151,10 @@ p{
 }
 #about-us .gallery{
   position: relative;
-  height: 300px;
   overflow: hidden;
-
 }
+
+/* buttons */
 #about-us .gallery span{
   position: absolute;
   background: #333;
@@ -175,11 +175,12 @@ p{
 #about-us .gallery span:last-of-type{
   right: 0;
 }
+
+/* images */
 #about-us .gallery > img{
   position: absolute;
   left: 0;
   width: 100%;
-  float: right;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -201,6 +202,7 @@ p{
 #about-us .gallery img:nth-child(7){
   left: 600%;
 }
+
 
 
 #faces{

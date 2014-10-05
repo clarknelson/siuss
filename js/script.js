@@ -45,4 +45,14 @@ $(document).ready(function(){
       $('#about-us .gallery img:nth-of-type(7)').css('left', g+'%');
     }
   });
+
+  var width = $('#about-us .gallery').innerWidth();
+  var height = width*0.65;
+  $('#about-us .gallery').css('height', height);
+
+  $(window).resize(function(){
+    width = $('#about-us .gallery').innerWidth();
+    height = width*0.65;
+    $('#about-us .gallery').css('height', height);
+  });
 });
