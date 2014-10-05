@@ -149,10 +149,46 @@ p{
 #about-us .info p{
   margin-bottom: 15px;
 }
-#about-us .gallery img{
-  width: 100%;
-}
+#about-us .gallery{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
 
+}
+#about-us .gallery span{
+  position: absolute;
+  background: #333;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 50%;
+  opacity: 0.10;
+}
+#about-us .gallery span:hover{
+  opacity: 0.75;
+}
+#about-us .gallery span img{
+  width: 25px;
+}
+#about-us .gallery span:first-of-type{
+  left: 0;
+}
+#about-us .gallery span:last-of-type{
+  right: 0;
+}
+#about-us .gallery > img{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  float: right;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#about-us .gallery img:nth-child(2){
+  left: 100%;
+}
+#about-us .gallery img:nth-child(3){
+  left: 200%;
+}
 
 
 #faces{
