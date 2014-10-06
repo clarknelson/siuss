@@ -34,7 +34,9 @@ p{
   font-size: 23px;
   font-weight: 300;
 }
-
+button{
+  border: 0;
+}
 
 
 .left{
@@ -84,9 +86,6 @@ p{
 
 
 
-#hero{
-
-}
 #hero h1{
   font-family: Ostrich, Helvetica, sans-serif;
   line-height: 110%;
@@ -123,6 +122,9 @@ p{
   margin-bottom: 30px;
   text-align: center;
 }
+#intro .tagline p:last-of-type{
+  margin-bottom: 0px;
+}
 
 
 
@@ -130,10 +132,10 @@ p{
   background: url('../img/halfpipe.JPG');
   background-size: cover;
   background-position: center;
-  padding: 160px 30px;
+  padding: 100px 30px;
 }
 #objective .panel{
-  background: hsla(0, 0%, 17%, 0.85);
+  background: hsla(0, 0%, 17%, 0.9);
   padding: 60px 30px;
   max-width: 500px;
   margin: 0 auto;
@@ -157,6 +159,9 @@ p{
 }
 #about-us .info p{
   margin-bottom: 15px;
+}
+#about-us .info p:last-of-type{
+  margin-bottom: 25px;
 }
 #about-us .gallery{
   position: relative;
@@ -212,6 +217,38 @@ p{
   left: 600%;
 }
 
+.modal{
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: hsla(0, 0%, 0%, 0.85);
+  z-index: 999;
+}
+.modal iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.modal .close{
+  z-index: 1000;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 50px;
+  line-height: 100%;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+
 
 
 #faces{
@@ -264,19 +301,23 @@ p{
 #contact .fb-like-box{
   float: right;
 }
-#contact .logos img{
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-#contact .logos{
+#contact .credits{
   clear: both;
   text-align: center;
+  margin-top: 50px;
 }
-#contact .logos img{
-  margin: 0 10px;
+#contact .credits img{
+  margin: 10px;
 }
+#contact .credits p{
+  font-size: 16px;
+  margin: 0;
+}
+#contact .credits p a{
+  color: white;
+  text-decoration: none;
+}
+
 
 @media screen and (max-width: 700px){
   .left{
@@ -294,6 +335,9 @@ p{
     display: block;
     width: 100%;
     margin-bottom: 80px;
+  }
+  .modal iframe{
+    width: 100%;
   }
 }
 @media screen and (max-width: 900px){

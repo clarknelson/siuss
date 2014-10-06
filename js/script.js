@@ -67,4 +67,15 @@ $(document).ready(function(){
   $('#hero h1').click(function(){
     $(this).fadeOut();
   });
+
+  $('#about-us .info .button:first-of-type').click(function(){
+    $('#modal1').fadeIn();
+  });
+  $('#about-us .info .button:last-of-type').click(function(){
+    $('#modal2').fadeIn();
+  });
+  $('.modal .close').click(function(){
+    $('#modal1').fadeOut();
+    $('#modal2').fadeOut();
+  });
 });
