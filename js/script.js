@@ -46,6 +46,8 @@ $(document).ready(function(){
     }
   });
 
+  
+  // responsive videos / pictures
   var width1 = $('#about-us .gallery').innerWidth();
   var height1 = width1*0.65;
   $('#about-us .gallery').css('height', height1);
@@ -64,10 +66,10 @@ $(document).ready(function(){
     $('#hero iframe').css('height', height2);
   });
 
-  $('#hero h1').click(function(){
-    $(this).fadeOut();
-  });
+  // hide the site title on the video
+  $('#hero h1').click(function(){ $(this).fadeOut(); });
 
+  
   $('#about-us .info .button:first-of-type').click(function(){
     $('#modal1').fadeIn();
   });
